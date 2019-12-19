@@ -20,13 +20,48 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/GitHub/practicum 4/convolutionfilter/main.c" title="main.c" tooltip="C:/GitHub/practicum 4/convolutionfilter/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/GitHub/practicum 4/convolutionfilter/main.c" title="main.c" tooltip="C:/GitHub/practicum 4/convolutionfilter/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Sources/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1017" selectionTopPixel="378"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="221" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="adc.c" partName="adc.c" path="C:/GitHub/practicum 4/convolutionfilter/adc.c" title="adc.c" tooltip="C:/GitHub/practicum 4/convolutionfilter/adc.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Sources/adc.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2791" selectionTopPixel="1075"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" partName="main.h" path="C:/GitHub/practicum 4/convolutionfilter/main.h" title="main.h" tooltip="C:/GitHub/practicum 4/convolutionfilter/main.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Includes/main.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1060" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="uart.h" partName="uart.h" path="C:/GitHub/practicum 4/convolutionfilter/uart.h" title="uart.h" tooltip="C:/GitHub/practicum 4/convolutionfilter/uart.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Includes/uart.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="424" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="dac.c" partName="dac.c" path="C:/GitHub/practicum 4/convolutionfilter/dac.c" title="dac.c" tooltip="C:/GitHub/practicum 4/convolutionfilter/dac.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Sources/dac.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3205" selectionTopPixel="1738"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stddef.h" partName="stddef.h" title="stddef.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q2\lib\gcc\arm-none-eabi\5.4.1\include\stddef.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q2\lib\gcc\arm-none-eabi\5.4.1\include\stddef.h" project="Convfilter"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7264" selectionTopPixel="3468"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" partName="uart.c" path="C:/GitHub/practicum 4/convolutionfilter/uart.c" title="uart.c" tooltip="C:/GitHub/practicum 4/convolutionfilter/uart.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Sources/uart.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4158" selectionTopPixel="2180"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" partName="stm32f4xx.h" path="C:/GitHub/practicum 4/convolutionfilter/cmsis_boot/stm32f4xx.h" title="stm32f4xx.h" tooltip="C:/GitHub/practicum 4/convolutionfilter/cmsis_boot/stm32f4xx.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/cmsis_boot/stm32f4xx.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="121" selectionOffset="69501" selectionTopPixel="19652"/>
 </editor>
 </editors>
 <views>
@@ -39,10 +74,11 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/Convfilter"/>
+<element path="/Convfilter/Includes"/>
 <element path="/Convfilter/Sources"/>
 </expanded>
 <selection>
-<element path="/Convfilter/Sources/main.c"/>
+<element path="/Convfilter/Sources/uart.c"/>
 </selection>
 </viewState>
 </view>
@@ -247,183 +283,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/buzzer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/buzzer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/lcd.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/dac.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/adc.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/delay.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/keys_int.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/leds.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/pwm.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/rtc.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/spi.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/uart.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/adc.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/dac.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/delay.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/keys_int.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/lcd.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/leds.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/pwm.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/rtc.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/spi.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Includes/uart.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/dac.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ARM5/Sources/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/adc.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/uart.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Includes/main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/dac.c"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q2\lib\gcc\arm-none-eabi\5.4.1\include\stddef.h" project="Convfilter"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/uart.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/cmsis_boot/stm32f4xx.h"/>
 </editors>
+<item historyLabel="uart.c" index="2">
+<position info="not_deleted" x="4107" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2006" y="0"/>
+</item>
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="2814" y="0"/>
+</item>
+<item historyLabel="uart.c" index="2">
+<position info="not_deleted" x="3841" y="0"/>
+</item>
+<item historyLabel="stddef.h" index="5">
+<position info="not_deleted" x="7264" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2006" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1921" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2008" y="0"/>
+</item>
+<item historyLabel="uart.c" index="6">
+<position info="not_deleted" x="3992" y="0"/>
+</item>
 <item historyLabel="main.c" index="0">
 <position/>
 </item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="71" y="0"/>
+<item historyLabel="uart.c" index="6">
+<position info="not_deleted" x="4158" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="642" y="0"/>
-</item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="458" y="0"/>
-</item>
-<item historyLabel="buzzer.h" index="2">
 <position/>
 </item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="220" y="0"/>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="3597" y="0"/>
 </item>
-<item historyLabel="buzzer.c" index="3">
+<item historyLabel="main.c" index="0">
 <position/>
 </item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="220" y="0"/>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="3653" y="0"/>
 </item>
-<item historyLabel="lcd.c" index="4">
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="2618" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
 <position/>
 </item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="220" y="0"/>
+<item historyLabel="uart.c" index="6">
+<position info="not_deleted" x="4158" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="642" y="0"/>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="4081" y="0"/>
 </item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="223" y="0"/>
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="2618" y="0"/>
 </item>
-<item historyLabel="dac.c" index="5">
-<position info="not_deleted" x="3947" y="0"/>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="4081" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1408" y="40"/>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="3903" y="0"/>
 </item>
-<item historyLabel="dac.c" index="5">
-<position info="not_deleted" x="65" y="0"/>
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="2618" y="0"/>
 </item>
-<item historyLabel="adc.c" index="6">
-<position info="not_deleted" x="138" y="0"/>
+<item historyLabel="main.h" index="3">
+<position info="not_deleted" x="468" y="0"/>
 </item>
-<item historyLabel="buzzer.c" index="3">
-<position info="not_deleted" x="72" y="0"/>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="3903" y="0"/>
 </item>
-<item historyLabel="delay.c" index="7">
-<position info="not_deleted" x="53" y="0"/>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="3899" y="0"/>
 </item>
-<item historyLabel="keys_int.c" index="8">
-<position info="not_deleted" x="85" y="0"/>
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="818" y="0"/>
 </item>
-<item historyLabel="lcd.c" index="4">
+<item historyLabel="dac.c" index="4">
 <position/>
 </item>
-<item historyLabel="keys_int.c" index="8">
-<position info="not_deleted" x="4" y="83"/>
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="2370" y="0"/>
 </item>
-<item historyLabel="lcd.c" index="4">
-<position info="not_deleted" x="87" y="0"/>
+<item historyLabel="stm32f4xx.h" index="7">
+<position info="not_deleted" x="69501" y="121"/>
 </item>
-<item historyLabel="leds.c" index="9">
-<position info="not_deleted" x="87" y="0"/>
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="2518" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1408" y="40"/>
-</item>
-<item historyLabel="pwm.c" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="rtc.c" index="11">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="spi.c" index="12">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="uart.c" index="13">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="adc.h" index="14">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="buzzer.h" index="2">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="dac.h" index="15">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="delay.h" index="16">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="keys_int.h" index="17">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="lcd.h" index="18">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="leds.h" index="19">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="223" y="0"/>
-</item>
-<item historyLabel="pwm.h" index="20">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="rtc.h" index="21">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="spi.h" index="22">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="uart.h" index="23">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="spi.h" index="22">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="pwm.h" index="20">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="223" y="0"/>
-</item>
-<item historyLabel="pwm.c" index="10">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="3475" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1408" y="40"/>
+<position/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="810" y="0"/>
+<position info="not_deleted" x="319" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1733" y="0"/>
+<position info="not_deleted" x="870" y="0"/>
 </item>
-<item historyLabel="dac.c" index="24">
-<position info="not_deleted" x="3094" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1868" y="0"/>
 </item>
-<item historyLabel="main.c" index="25">
-<position info="not_deleted" x="1733" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="300" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="26">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="340" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1792" y="0"/>
+</item>
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="2518" y="0"/>
+</item>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="3375" y="0"/>
+</item>
+<item historyLabel="adc.c" index="1">
+<position info="not_deleted" x="2791" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1886" y="0"/>
+</item>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="4020" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1886" y="0"/>
+</item>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="4020" y="0"/>
+</item>
+<item historyLabel="dac.c" index="4">
+<position info="not_deleted" x="488" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="main.h" index="3">
+<position info="not_deleted" x="1060" y="0"/>
+</item>
+<item active="true" historyLabel="dac.c" index="4">
+<position info="not_deleted" x="488" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -432,6 +449,27 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="Convfilter/cmsis_boot/stm32f4xx.h">
+<persistable path="/Convfilter/cmsis_boot/stm32f4xx.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" tooltip="Convfilter/Sources/uart.c">
+<persistable path="/Convfilter/Sources/uart.c"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stddef.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q2\lib\gcc\arm-none-eabi\5.4.1\include\stddef.h">
+<persistable path="C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q2\lib\gcc\arm-none-eabi\5.4.1\include\stddef.h" project="Convfilter"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dac.c" tooltip="Convfilter/Sources/dac.c">
+<persistable path="/Convfilter/Sources/dac.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.h" tooltip="Convfilter/Includes/uart.h">
+<persistable path="/Convfilter/Includes/uart.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="Convfilter/Includes/main.h">
+<persistable path="/Convfilter/Includes/main.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="adc.c" tooltip="Convfilter/Sources/adc.c">
+<persistable path="/Convfilter/Sources/adc.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Convfilter/Sources/main.c">
 <persistable path="/Convfilter/Sources/main.c"/>
 </file>
@@ -456,27 +494,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="misc.h" tooltip="project 2B/cmsis_lib/include/misc.h">
 <persistable path="/project 2B/cmsis_lib/include/misc.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" tooltip="project 2B/board_outputs/Source/uart.c">
-<persistable path="/project 2B/board_outputs/Source/uart.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.h" tooltip="project 2B/board_outputs/Source/uart.h">
-<persistable path="/project 2B/board_outputs/Source/uart.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="includes.h" tooltip="project 2B/includes.h">
-<persistable path="/project 2B/includes.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="syscalls.c" tooltip="project 2B/syscalls/syscalls.c">
-<persistable path="/project 2B/syscalls/syscalls.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="project 2B/main.c">
-<persistable path="/project 2B/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" tooltip="Project2B/Sources/uart.c">
-<persistable path="/Project2B/Sources/uart.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Project2B/Sources/main.c">
-<persistable path="/Project2B/Sources/main.c"/>
 </file>
 </mruList>
 </workbench>

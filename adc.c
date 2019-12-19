@@ -26,7 +26,7 @@ void ADC_init(int Channel)
  * The DAC can be loaded with:
  * Data = Get_ADC_Value(Channel_1);
  * Data = Get_ADC_Value(Channel_2);
- * Data is an 16 bit integer with the 12 bit ADC value
+ * Data is a 16 bit integer with the 12 bit ADC value
  */
 {
 	GPIO_InitTypeDef 		GPIO_InitStructure;
@@ -61,17 +61,17 @@ void ADC_init(int Channel)
 	ADC_InitStructure.ADC_NbrOfConversion = 1;
 	if (Channel == Channel_1)
 	{
-		ADC_Init(ADC2, &ADC_InitStructure);
-		ADC_RegularChannelConfig(ADC2, ADC_Channel_11, 1, ADC_SampleTime_3Cycles);
-		/* Enable ADC2*/
-		ADC_Cmd(ADC2, ENABLE);
+		ADC_Init(ADC1, &ADC_InitStructure);
+		ADC_RegularChannelConfig(ADC1, ADC_Channel_11, 1, ADC_SampleTime_3Cycles);
+		/* Enable ADC1*/
+		ADC_Cmd(ADC1, ENABLE);
 	}
 	else
 	{
-		ADC_Init(ADC3, &ADC_InitStructure);
-		ADC_RegularChannelConfig(ADC3, ADC_Channel_12, 1, ADC_SampleTime_3Cycles);
-		/* Enable ADC3*/
-		ADC_Cmd(ADC3, ENABLE);
+		ADC_Init(ADC2, &ADC_InitStructure);
+		ADC_RegularChannelConfig(ADC2, ADC_Channel_12, 1, ADC_SampleTime_3Cycles);
+		/* Enable ADC2*/
+		ADC_Cmd(ADC2, ENABLE);
 	}
 }
 
@@ -85,15 +85,15 @@ uint16_t Get_ADC_Value(int Channel)
 {
 	if (Channel == 1)
 	{
-		ADC_SoftwareStartConv(ADC2);
-		while(ADC_GetSoftwareStartConvStatus(ADC2) != RESET);
-		return (ADC_GetConversionValue(ADC2) >> 4);
+		ADC_SoftwareStartConv(ADC1);
+		while(ADC_GetSoftwareStartConvStatus(ADC1) != RESET);
+		return (ADC_GetConversionValue(ADC1) >> 4);
 	}
 	else
 	{
-		ADC_SoftwareStartConv(ADC3);
-		while(ADC_GetSoftwareStartConvStatus(ADC3) != RESET);
-		return (ADC_GetConversionValue(ADC3) >> 4);
+		ADC_SoftwareStartConv(ADC2);
+		while(ADC_GetSoftwareStartConvStatus(ADC2) != RESET);
+		return (ADC_GetConversionValue(ADC2) >> 4);
 	}
 }
 #endif

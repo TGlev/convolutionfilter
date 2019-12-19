@@ -116,8 +116,8 @@ void DAC_INT_init(void)
 void TIM3_IRQHandler(void)
 /* TIM3 Interrupt Request Handler
  * This function is called when an TIM3 interrupt occurred.
- * In this function you can load the DAC channels so the steplength
- * stay the same.
+ * In this function you can load the DAC channels so the step size
+ * stays the same.
  */
 {
 	if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
@@ -125,14 +125,14 @@ void TIM3_IRQHandler(void)
 		TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
 
 		// With interrupt enabled, this will be done to the DAC channels
-		if (Data1++>1024) Data1=0;
+		if (Data1++>512) Data1=0;
 		DAC_SetChannel1Data(DAC_Align_12b_R, Data1);
 		//DAC_SetChannel2Data(DAC_Align_12b_R, Data1);
 
 		// example read ADC value and store in DAC
 		//DAC_SetChannel1Data(DAC_Align_12b_R, Get_ADC_Value(Channel_1));
 
-		DAC_SetChannel2Data(DAC_Align_12b_R, Get_ADC_Value(Channel_2));  // also called a very expensive wire!
+		DAC_SetChannel2Data(DAC_Align_12b_R, (Get_ADC_Value(Channel_2) + Get_ADC_Value(Channel_1)));  // also called a very expensive wire!
 	}
 }
 #endif

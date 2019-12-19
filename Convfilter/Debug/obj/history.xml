@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 5.1.0 x86_64-w64-mingw32 -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O3 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter\cmsis_boot -I..\..\..\..\..\GitHub\practicum 4 -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter\cmsis -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter\cmsis_lib -I..\..\..\..\..\GitHub -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter\cmsis_lib\include">
+      <target file="spi.o" lastModified="16f1d95ab88">
+         <source file="..\..\..\spi.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_exti.o" lastModified="16f1d95bf79">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="16f1d95ba2a">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="keys_int.o" lastModified="16f1d95b97e">
+         <source file="..\..\..\keys_int.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="buzzer.o" lastModified="16f1d95adaa">
+         <source file="..\..\..\buzzer.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_rtc.o" lastModified="16f1d95c1ea">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rtc.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="dac.o" lastModified="16f1d95b81a">
+         <source file="..\..\..\dac.c" lastModified="16f1d95a7de"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="16f1d95aadc">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="16f1d95b23e">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="16f1d95c3fd">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="16f1d95b56b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="16f1d95baa7">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="printf.o" lastModified="16f1d95b77e">
+         <source file="..\..\..\stdio\printf.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="misc.o" lastModified="16f1d95bff6">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="16f1d95bbef">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="leds.o" lastModified="16f1d95b8b6">
+         <source file="..\..\..\leds.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="pwm.o" lastModified="16f1d95b06a">
+         <source file="..\..\..\pwm.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="16f1d95bedd">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="16f1d95b432">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_pwr.o" lastModified="16f1d95af31">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="stm32f4xx_dac.o" lastModified="16f1d95b125">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dac.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="rtc.o" lastModified="16f1d95afdd">
+         <source file="..\..\..\rtc.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="uart.o" lastModified="16f1d95b1e1">
+         <source file="..\..\..\uart.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="delay.o" lastModified="16f1d95ac33">
+         <source file="..\..\..\delay.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="syscalls.o" lastModified="16f1d95bb24">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="adc.o" lastModified="16f1d95bc9b">
+         <source file="..\..\..\adc.c" lastModified="16f1d72f875"/>
+      </target>
+      <target file="lcd.o" lastModified="16f1d95be02">
+         <source file="..\..\..\lcd.c" lastModified="16cdcaf6d20"/>
+      </target>
+      <target file="main.o" lastModified="16f1d95b2ea">
+         <source file="..\..\..\main.c" lastModified="16f1d81408f"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="16f1d95aea4">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16cdcaf6d20"/>
+      </target>
+   </processor>
+</history>

@@ -18,6 +18,7 @@
 #include "stm32f4xx_syscfg.h"
 #include "stm32f4xx_pwr.h"
 #include "misc.h"
+#include "convolution.h"
 #include <stdio.h>
 #include <stdarg.h>
 

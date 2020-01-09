@@ -1,36 +1,37 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=ARM5.map -O3 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Convfilter -TC:\CooCox\CoIDE\configuration\ProgramData\Convfilter/arm-gcc-link.ld -g">
-      <target file="ARM5.elf" lastModified="16f89631ac8">
-         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="16f89630182"/>
-         <source file="..\obj\spi.o" lastModified="16f8963021b"/>
-         <source file="..\obj\delay.o" lastModified="16f896302c9"/>
-         <source file="..\obj\buzzer.o" lastModified="16f89630442"/>
-         <source file="..\obj\stm32f4xx_usart.o" lastModified="16f89630518"/>
-         <source file="..\obj\stm32f4xx_pwr.o" lastModified="16f8963058d"/>
-         <source file="..\obj\rtc.o" lastModified="16f89630639"/>
-         <source file="..\obj\pwm.o" lastModified="16f896306cc"/>
-         <source file="..\obj\stm32f4xx_dac.o" lastModified="16f89630781"/>
-         <source file="..\obj\uart.o" lastModified="16f8963082b"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="16f89630885"/>
-         <source file="..\obj\main.o" lastModified="16f89630918"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="16f89630a1d"/>
-         <source file="..\obj\stm32f4xx_adc.o" lastModified="16f89630b09"/>
-         <source file="..\obj\printf.o" lastModified="16f89630cb4"/>
-         <source file="..\obj\dac.o" lastModified="16f89630d52"/>
-         <source file="..\obj\leds.o" lastModified="16f89630de2"/>
-         <source file="..\obj\keys_int.o" lastModified="16f89630e8e"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="16f89630f48"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="16f89630fca"/>
-         <source file="..\obj\syscalls.o" lastModified="16f8963103f"/>
-         <source file="..\obj\stm32f4xx_dma.o" lastModified="16f896310f8"/>
-         <source file="..\obj\adc.o" lastModified="16f8963118b"/>
-         <source file="..\obj\lcd.o" lastModified="16f896312e9"/>
-         <source file="..\obj\stm32f4xx_spi.o" lastModified="16f896313bd"/>
-         <source file="..\obj\stm32f4xx_exti.o" lastModified="16f8963143e"/>
-         <source file="..\obj\misc.o" lastModified="16f896314b6"/>
-         <source file="..\obj\stm32f4xx_rtc.o" lastModified="16f89631692"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="16f89631881"/>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=ARM5.map -O2 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Convfilter -TC:\CooCox\CoIDE\configuration\ProgramData\Convfilter/arm-gcc-link.ld -g">
+      <target file="ARM5.elf" lastModified="16f89fdebe4">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="16f89fdd3b9"/>
+         <source file="..\obj\spi.o" lastModified="16f89fdd455"/>
+         <source file="..\obj\delay.o" lastModified="16f89fdd4f1"/>
+         <source file="..\obj\buzzer.o" lastModified="16f89fdd5eb"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="16f89fdd6e5"/>
+         <source file="..\obj\stm32f4xx_pwr.o" lastModified="16f89fdd772"/>
+         <source file="..\obj\rtc.o" lastModified="16f89fdd82d"/>
+         <source file="..\obj\pwm.o" lastModified="16f89fdd8aa"/>
+         <source file="..\obj\stm32f4xx_dac.o" lastModified="16f89fdd956"/>
+         <source file="..\obj\uart.o" lastModified="16f89fdda02"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="16f89fdda60"/>
+         <source file="..\obj\main.o" lastModified="16f89fddaec"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="16f89fddbe6"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="16f89fddce0"/>
+         <source file="..\obj\printf.o" lastModified="16f89fdddda"/>
+         <source file="..\obj\convolution.o" lastModified="16f89fdde86"/>
+         <source file="..\obj\dac.o" lastModified="16f89fddf32"/>
+         <source file="..\obj\leds.o" lastModified="16f89fddfce"/>
+         <source file="..\obj\keys_int.o" lastModified="16f89fde06a"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="16f89fde126"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="16f89fde1a3"/>
+         <source file="..\obj\syscalls.o" lastModified="16f89fde210"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="16f89fde2db"/>
+         <source file="..\obj\adc.o" lastModified="16f89fde378"/>
+         <source file="..\obj\lcd.o" lastModified="16f89fde443"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="16f89fde51d"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="16f89fde59a"/>
+         <source file="..\obj\misc.o" lastModified="16f89fde608"/>
+         <source file="..\obj\stm32f4xx_rtc.o" lastModified="16f89fde7cd"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="16f89fde9c1"/>
       </target>
    </processor>
 </history>

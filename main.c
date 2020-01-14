@@ -67,7 +67,10 @@ int main(void) {
 
 	UART_printf(sizeof(teststr), teststr, 33);
 
-	convolve();
+	//test functions:
+	//convolve();
+	testwsinc_gen();
 
+	UART_printf(sizeof(teststr), teststr, 33);
 	while (1); // AD/DA will run under interrupt
 }

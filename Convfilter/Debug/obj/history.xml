@@ -1,95 +1,98 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc 5.1.0 x86_64-w64-mingw32 -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O2 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter\cmsis_boot -I..\..\..\..\..\GitHub\practicum 4 -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter\cmsis -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter\cmsis_lib -I..\..\..\..\..\GitHub -I..\..\..\..\..\GitHub\practicum 4\convolutionfilter\cmsis_lib\include">
-      <target file="spi.o" lastModified="16f89fdd455">
-         <source file="..\..\..\spi.c" lastModified="16cdcaf6d20"/>
+   <processor signature="arm-none-eabi-gcc 5.1.0 x86_64-w64-mingw32 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O3 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -ID:\GitHub\convolutionfilter\cmsis_lib\include -ID:\GitHub\convolutionfilter\cmsis_lib -ID:\ -ID:\GitHub -ID:\GitHub\convolutionfilter\cmsis_boot -ID:\GitHub\convolutionfilter -ID:\GitHub\convolutionfilter\cmsis">
+      <target file="spi.o" lastModified="16fa53365d0">
+         <source file="..\..\..\spi.c" lastModified="16fa4d6ee81"/>
       </target>
-      <target file="stm32f4xx_exti.o" lastModified="16f89fde59a">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_exti.o" lastModified="16fa533726a">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="16fa4d6ee69"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="16f89fde126">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_gpio.o" lastModified="16fa5336f2f">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="16fa4d6ee69"/>
       </target>
-      <target file="keys_int.o" lastModified="16f89fde06a">
-         <source file="..\..\..\keys_int.c" lastModified="16cdcaf6d20"/>
+      <target file="keys_int.o" lastModified="16fa5336e3f">
+         <source file="..\..\..\keys_int.c" lastModified="16fa4d6ee75"/>
       </target>
-      <target file="buzzer.o" lastModified="16f89fdd5eb">
-         <source file="..\..\..\buzzer.c" lastModified="16cdcaf6d20"/>
+      <target file="buzzer.o" lastModified="16fa5336712">
+         <source file="..\..\..\buzzer.c" lastModified="16fa4d6ee4b"/>
       </target>
-      <target file="stm32f4xx_rtc.o" lastModified="16f89fde7cd">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rtc.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_rtc.o" lastModified="16fa53373f5">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rtc.c" lastModified="16fa4d6ee6c"/>
       </target>
-      <target file="dac.o" lastModified="16f89fddf32">
-         <source file="..\..\..\dac.c" lastModified="16f8962fec2"/>
+      <target file="wsinc.o" lastModified="16fa5336ec2">
+         <source file="..\..\..\wsinc.c" lastModified="16fa53363ab"/>
       </target>
-      <target file="stm32f4xx_syscfg.o" lastModified="16f89fdd3b9">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="16cdcaf6d20"/>
+      <target file="dac.o" lastModified="16fa5336d67">
+         <source file="..\..\..\dac.c" lastModified="16fa4d6ee73"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="16f89fdda60">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_syscfg.o" lastModified="16fa5336572">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="16fa4d6ee6d"/>
       </target>
-      <target file="stm32f4xx_tim.o" lastModified="16f89fde9c1">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="16cdcaf6d20"/>
+      <target file="startup_stm32f4xx.o" lastModified="16fa53369e6">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="16fa4d6ee50"/>
       </target>
-      <target file="stm32f4xx_adc.o" lastModified="16f89fddce0">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_tim.o" lastModified="16fa533753b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="16fa4d6ee6e"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="16f89fde1a3">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_adc.o" lastModified="16fa5336b81">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="16fa4d6ee67"/>
       </target>
-      <target file="printf.o" lastModified="16f89fdddda">
-         <source file="..\..\..\stdio\printf.c" lastModified="16cdcaf6d20"/>
+      <target file="system_stm32f4xx.o" lastModified="16fa5336f85">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16fa4d6ee55"/>
       </target>
-      <target file="misc.o" lastModified="16f89fde608">
-         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="16cdcaf6d20"/>
+      <target file="printf.o" lastModified="16fa5336c94">
+         <source file="..\..\..\stdio\printf.c" lastModified="16fa516b971"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="16f89fde2db">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="16cdcaf6d20"/>
+      <target file="misc.o" lastModified="16fa53372b8">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="16fa4d6ee66"/>
       </target>
-      <target file="leds.o" lastModified="16f89fddfce">
-         <source file="..\..\..\leds.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_dma.o" lastModified="16fa5337047">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="16fa4d6ee68"/>
       </target>
-      <target file="pwm.o" lastModified="16f89fdd8aa">
-         <source file="..\..\..\pwm.c" lastModified="16cdcaf6d20"/>
+      <target file="leds.o" lastModified="16fa5336dc8">
+         <source file="..\..\..\leds.c" lastModified="16fa4d6ee76"/>
       </target>
-      <target file="stm32f4xx_spi.o" lastModified="16f89fde51d">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="16cdcaf6d20"/>
+      <target file="pwm.o" lastModified="16fa53368cb">
+         <source file="..\..\..\pwm.c" lastModified="16fa4d6ee80"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="16f89fddbe6">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_spi.o" lastModified="16fa5337215">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="16fa4d6ee6c"/>
       </target>
-      <target file="stm32f4xx_pwr.o" lastModified="16f89fdd772">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_rcc.o" lastModified="16fa5336aeb">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="16fa4d6ee6b"/>
       </target>
-      <target file="stm32f4xx_dac.o" lastModified="16f89fdd956">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dac.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_pwr.o" lastModified="16fa5336800">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="16fa4d6ee6a"/>
       </target>
-      <target file="rtc.o" lastModified="16f89fdd82d">
-         <source file="..\..\..\rtc.c" lastModified="16cdcaf6d20"/>
+      <target file="stm32f4xx_dac.o" lastModified="16fa5336936">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dac.c" lastModified="16fa4d6ee68"/>
       </target>
-      <target file="uart.o" lastModified="16f89fdda02">
-         <source file="..\..\..\uart.c" lastModified="16cdcaf6d20"/>
+      <target file="rtc.o" lastModified="16fa533686c">
+         <source file="..\..\..\rtc.c" lastModified="16fa4d6ee81"/>
       </target>
-      <target file="delay.o" lastModified="16f89fdd4f1">
-         <source file="..\..\..\delay.c" lastModified="16cdcaf6d20"/>
+      <target file="uart.o" lastModified="16fa53369a8">
+         <source file="..\..\..\uart.c" lastModified="16fa4d6ee84"/>
       </target>
-      <target file="syscalls.o" lastModified="16f89fde210">
-         <source file="..\..\..\syscalls\syscalls.c" lastModified="16cdcaf6d20"/>
+      <target file="delay.o" lastModified="16fa5336634">
+         <source file="..\..\..\delay.c" lastModified="16fa4d6ee73"/>
       </target>
-      <target file="adc.o" lastModified="16f89fde378">
-         <source file="..\..\..\adc.c" lastModified="16f1d72f875"/>
+      <target file="syscalls.o" lastModified="16fa5336fd0">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="16fa4d6ee84"/>
       </target>
-      <target file="convolution.o" lastModified="16f89fdde86">
-         <source file="..\..\..\convolution.c" lastModified="16f89fdd0fa"/>
+      <target file="adc.o" lastModified="16fa53370ab">
+         <source file="..\..\..\adc.c" lastModified="16fa4d6ee46"/>
       </target>
-      <target file="lcd.o" lastModified="16f89fde443">
-         <source file="..\..\..\lcd.c" lastModified="16cdcaf6d20"/>
+      <target file="convolution.o" lastModified="16fa5336d04">
+         <source file="..\..\..\convolution.c" lastModified="16fa4d6ee6f"/>
       </target>
-      <target file="main.o" lastModified="16f89fddaec">
-         <source file="..\..\..\main.c" lastModified="16f89a4996e"/>
+      <target file="lcd.o" lastModified="16fa533718f">
+         <source file="..\..\..\lcd.c" lastModified="16fa4d6ee76"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="16f89fdd6e5">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16cdcaf6d20"/>
+      <target file="main.o" lastModified="16fa5336a46">
+         <source file="..\..\..\main.c" lastModified="16fa4ef61fc"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="16fa53367a8">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16fa4d6ee6e"/>
       </target>
    </processor>
 </history>

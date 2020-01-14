@@ -19,6 +19,7 @@
 #include "stm32f4xx_pwr.h"
 #include "misc.h"
 #include "convolution.h"
+#include "wsinc.h"
 #include <stdio.h>
 #include <stdarg.h>
 

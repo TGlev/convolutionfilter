@@ -21,6 +21,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+//Extra DSP functions:
+#include "arm_math.h"
+
 
 
 /*#if	RTC1

@@ -135,6 +135,7 @@ void TIM3_IRQHandler(void)
 		//Write the sample into the buffer
 		buffer_write(Get_ADC_Value(Channel_2));
 
+		//Convolve the circular buffer with the impulse response.
 		DAC_SetChannel2Data(DAC_Align_12b_R, convolve());
 
 		//DAC_SetChannel2Data(DAC_Align_12b_R, Get_ADC_Value(Channel_2));  // also called a very expensive wire!

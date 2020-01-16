@@ -132,7 +132,12 @@ void TIM3_IRQHandler(void)
 		// example read ADC value and store in DAC
 		//DAC_SetChannel1Data(DAC_Align_12b_R, Get_ADC_Value(Channel_1));
 
-		DAC_SetChannel2Data(DAC_Align_12b_R, Get_ADC_Value(Channel_2));  // also called a very expensive wire!
+		//Write the sample into the buffer
+		buffer_write(Get_ADC_Value(Channel_2));
+
+		DAC_SetChannel2Data(DAC_Align_12b_R, convolve());
+
+		//DAC_SetChannel2Data(DAC_Align_12b_R, Get_ADC_Value(Channel_2));  // also called a very expensive wire!
 	}
 }
 #endif

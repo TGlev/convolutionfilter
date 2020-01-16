@@ -5,7 +5,7 @@
 ///////////////////////////////////////////////////////////////////////
 
 //Prototypes:
-void convolve();
+int convolve();
 void loadarrays(int* in, int* impuls, int in_size, int impuls_size);
 void printarrays(int* in, int* impuls, int in_size, int impuls_size);
 void printresultaat(int* out, int output_size);

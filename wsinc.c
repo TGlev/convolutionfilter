@@ -9,8 +9,10 @@
 #include "wsinc.h"
 #include <math.h>
 
+
+
 //Function that generates a windowed sinc in integers (division by 10E6 needed):
-void gen_kernel(int* pkernel, int cut_freq, int kernel_size)
+void gen_kernel(int cut_freq, int kernel_size)
 {
 	int i; //Iterator for loops.
 	float deelsom = 0.0; //Required for normalization.
@@ -53,22 +55,6 @@ void gen_kernel(int* pkernel, int cut_freq, int kernel_size)
 
 	for(i = 0; i < kernel_size +1; i++) //Convert float kernel to int kernel.
 	{
-		pkernel[i] = kernel_float[i] * 10E6; //Multiplication factor of 10 million. Don't forget to mitigate this afterwards!
+		wSincKernel[i] = kernel_float[i];// * 1E2; Multiplication factor of 10 million. Don't forget to mitigate this afterwards!
 	}
-}
-
-//Function that calls the gen_kernel function and spits out the values of the windowed sinc to the UART.
-//Useful for testing the gen_kernel function.
-void testwsinc_gen()
-{
-	//Array that contains the kernel of the windowed-sinc filter.
-		//Length is detemined by the roll-off, via M = 4/BW, where BW is the desired transition bandwidth as a fraction of the sampling frequency between 0 and 0.5.
-		int w_sinc_kernel[KERNELgrot + 1];
-		int i;
-
-		gen_kernel(w_sinc_kernel, 2590, KERNELgrot); //Generate kernel by giving the pointer to the array to this function.
-
-		//Print generated kernel:
-		for(i = 0; i < KERNELgrot + 1; i++)
-			UART_printf(25 ,"%d, ", w_sinc_kernel[i]);
 }

@@ -18,8 +18,6 @@
 #include "stm32f4xx_syscfg.h"
 #include "stm32f4xx_pwr.h"
 #include "misc.h"
-#include "convolution.h"
-#include "wsinc.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -88,6 +86,13 @@
 #include "stm32f4xx_tim.h"
 #endif
 
+/*
+ * OWN LIBRARIES
+ */
+#include "convolution.h"
+#include "wsinc.h"
+#include "circularbuffer.h"
+
 
 
 #define		LED1		GPIOD, GPIO_Pin_12
@@ -99,6 +104,4 @@
 #define		ON			1
 #define 	OFF			0
 
-
-
-
+float wSincKernel[BUFFERSIZE];

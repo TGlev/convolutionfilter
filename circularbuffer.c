@@ -7,6 +7,12 @@
 #include "circularbuffer.h"
 #include "main.h"
 
+
+//The main array where the values of the buffer are stored
+int buffer[BUFFERSIZE];
+
+//The two variables that keep track of where to read and where to write inside of the circular buffer
+int bufferPosition = 0;
 /*
  * Import function to initialize the buffer.
  * It basically loops trough all of the elements in the buffer array and zeros them
@@ -18,41 +24,35 @@ void buffer_init()
 		buffer[i] = 0;
 
 	//Set the indexes to zero
-	readIndex = 0;
-	writeIndex = 0;
+	bufferPosition = 0;
 }
 
 void buffer_write(int data)
 {
-	//Make sure the buffer isnt full
-	if(isBufferFull > 0)
-		return;
 
 	//Put the data at the right position in the buffer
-	buffer[writeIndex] = data;
+	buffer[bufferPosition] = data;
 
 	//Increment the writeIndex
 	//Make sure the writeIndex never exceeds the size of the buffer by taking the modulus of the index.
 	//e.g. writeindex is 11 and buffersize is 10. 11 % 10 would wrap around to 1.
-	writeIndex = (writeIndex + 1) % BUFFERSIZE;
-
-	//If the write and read index are at the same position, the buffer is FULL
-	if(writeIndex == readIndex)
-		isBufferFull = 1;
+	bufferPosition = (bufferPosition + 1) % BUFFERSIZE;
+	//bufferPosition++;
+	//if(bufferPosition > BUFFERSIZE)
+		//bufferPosition = 0;
 }
 
-int buffer_read()
+int buffer_read(int offset)
 {
-	//Read the value from the buffer at the reading position
-	int value = buffer[readIndex];
+	//The -1 is necessary to get the newest sample, the newest sample is always the one right before the index
+	//The offset is kept in mind to get samples before or after the index
+	int readPosition = bufferPosition - offset - 1;
 
-	//Increment the readIndex
-	//Make sure the readIndex never exceeds the size of the buffer by taking the modulus of the index.
-	//e.g. readIndex is 11 and buffersize is 10. 11 % 10 would wrap around to 1.
-	readIndex = (readIndex + 1) % BUFFERSIZE;
+	//Make sure the position doesnt get below 0
+	if(readPosition < 0)
+		readPosition = readPosition + BUFFERSIZE;
 
-	//Because we read from the buffer, the buffer CAN NOT BE full anymore
-	isBufferFull = 0;
-	return value;
+	//Return the value from the buffer
+	return buffer[readPosition];
 }
 

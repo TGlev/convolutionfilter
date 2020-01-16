@@ -22,7 +22,7 @@ void printinfo() //Function that writes some info to the UART.
 					"	Luca Panjer en Ian Baak, EV3A\r\n"
 					"	Vak: STP, Docent: Franc van der Bent & Hubert Schuit\r\n\r\n"
 					"	CLK speed: %d Mhz\r\n\r\n";
-	char *version = "Luca?"; // Showed on LCD at startup
+	char *version = "Convolutie"; // Showed on LCD at startup
 
 	UART_printf(256, functionality, G_CLK / 1000000);
 
@@ -49,6 +49,8 @@ void initboard() //Function that contains all initialize functions of the board 
 
 	LCD_init(); // Initialise LCD-display
 
+	buffer_init();
+
 	//PWM_init();			// Initialise PWM modulation -> Maybe not needed
 
 	DAC_init(Channel_1); // init channel 1 of DA converter full precision
@@ -65,12 +67,10 @@ int main(void) {
 
 	char teststr[] = "Hallo dit is een test lmao %d\r\n";
 
-	UART_printf(sizeof(teststr), teststr, 33);
-
+	gen_kernel(5000, BUFFERSIZE - 1);
 	//test functions:
 	//convolve();
-	testwsinc_gen();
+	//testwsinc_gen();
 
-	UART_printf(sizeof(teststr), teststr, 33);
 	while (1); // AD/DA will run under interrupt
 }

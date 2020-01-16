@@ -12,7 +12,10 @@
 int convolve()
 {
 	int convolvedOutput = 0;
-	for(int j = 0; j < BUFFERSIZE; j++) //Bereken de outputwaarde door een sample met de bijbehorende impulswaarde te vermenigvuldigen en deze allemaal op te tellen.
+
+	//Bereken de outputwaarde door een sample met de bijbehorende impulswaarde te vermenigvuldigen en deze allemaal op te tellen.
+	//Dit stukje code is bijzonder kort geworden doordat de offset die aan buffer_read gegeven wordt automatisch de juiste sample uit het verleden pakt voor een bepaalde waarde van j.
+	for (int j = 0; j < BUFFERSIZE; j++)
 		convolvedOutput += wSincKernel[j] * buffer_read(j);
 
 	return convolvedOutput;

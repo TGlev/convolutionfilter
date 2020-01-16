@@ -23,7 +23,7 @@
 
 
 
-#if	RTC1
+/*#if	RTC1
 #include "stm32f4xx_rtc.h"
 #include "rtc.h"
 #endif
@@ -31,7 +31,7 @@
 #if SPI
 #include "stm32f4xx_spi.h"
 #include "spi.h"
-#endif
+#endif*/
 
 #if AD
 #define	TIMER 1
@@ -56,9 +56,9 @@
 #endif
 
 
-#if LEDS
+/*#if LEDS
 #include "leds.h"
-#endif
+#endif*/
 
 #if LCD
 #include "lcd.h"
@@ -68,10 +68,10 @@
 #include "delay.h"
 #endif
 
-#if BUZZER
+/*#if BUZZER
 #define	PWM	1
 #include "buzzer.h"
-#endif
+#endif*/
 
 #if PWM
 #define	TIMER 1
@@ -104,4 +104,5 @@
 #define		ON			1
 #define 	OFF			0
 
+//Global array for the filter kernel.
 float wSincKernel[BUFFERSIZE];

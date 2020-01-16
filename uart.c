@@ -121,7 +121,7 @@ void USART2_IRQHandler(void)
 				LCD_put("UART:   ");
 				LCD_XY(15,1);
 				LCD_putchar(string[i]);
-				morse(string[i]);
+			//	morse(string[i]);
 			}
 			charcounter = 0;
 			USART_SendData(USART2, c); // Echo Char

@@ -18,5 +18,6 @@ int convolve()
 	for (int j = 0; j < BUFFERSIZE; j++)
 		convolvedOutput += wSincKernel[j] * buffer_read(j);
 
-	return convolvedOutput;
+	//Divide by 10E3 to mitigate the multiplication factor in the filter kernel.
+	return convolvedOutput / 10E3;
 }

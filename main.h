@@ -107,5 +107,7 @@
 #define		ON			1
 #define 	OFF			0
 
+#define DEFAULTFREQ 5000
+
 //Global array for the filter kernel.
-float wSincKernel[BUFFERSIZE];
+int wSincKernel[BUFFERSIZE];

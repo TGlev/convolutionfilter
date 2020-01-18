@@ -1,23 +1,23 @@
 /*
-Author: 	W Pielage & E Helmond & J.F. van der Bent
-Date:		29-11-2016
-Revision:	3
+ Author: 	W Pielage & E Helmond & J.F. van der Bent
+ Date:		29-11-2016
+ Revision:	3
 
-    dac.c:
-          DAC driver with or without interrupts for ARM-board v5
+ dac.c:
+ DAC driver with or without interrupts for ARM-board v5
 
-    pin-info:
-           PA4 - DAC Channel 1
-           PA5 - DAC Channel 2
+ pin-info:
+ PA4 - DAC Channel 1
+ PA5 - DAC Channel 2
 
 
-To use the DAC channel 1 or 2 use the following initialize:
-	DAC_init(Channel_1);
-	DAC_init(Channel_2);
-To use a timer interrupt (TIM3) use:
-	DAC_INT_init();
-The interrupt handler called is TIM3_IRQHandler
-*/
+ To use the DAC channel 1 or 2 use the following initialize:
+ DAC_init(Channel_1);
+ DAC_init(Channel_2);
+ To use a timer interrupt (TIM3) use:
+ DAC_INT_init();
+ The interrupt handler called is TIM3_IRQHandler
+ */
 
 #include "main.h"
 #if DA
@@ -27,8 +27,6 @@ uint32_t Data1 = 0;
 uint32_t Data2 = 250;
 
 uint32_t Data;
-
-
 
 void DAC_init(int Channel)
 /* DAC Initialize
@@ -44,9 +42,9 @@ void DAC_init(int Channel)
  * Data is the data that has to be converted.
  */
 {
-  /* Preconfiguration before using DAC----------------------------------------*/
+	/* Preconfiguration before using DAC----------------------------------------*/
 	GPIO_InitTypeDef GPIO_InitStructure;
-	DAC_InitTypeDef  DAC_InitStructure;
+	DAC_InitTypeDef DAC_InitStructure;
 
 	/* DMA1 clock and GPIOA clock enable (to be used with DAC) */
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
@@ -55,7 +53,7 @@ void DAC_init(int Channel)
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE);
 
 	/* DAC channel 1 & 2 (DAC_OUT1 = PA.4, DAC_OUT2 = PA.5) configuration */
-	if( Channel == Channel_1)
+	if (Channel == Channel_1)
 		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
 	else
 		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;
@@ -67,7 +65,7 @@ void DAC_init(int Channel)
 	DAC_InitStructure.DAC_Trigger = DAC_Trigger_None;
 	DAC_InitStructure.DAC_WaveGeneration = DAC_WaveGeneration_None;
 	DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Enable;
-	if( Channel == Channel_1)
+	if (Channel == Channel_1)
 	{
 		DAC_Init(DAC_Channel_1, &DAC_InitStructure);
 		/* Enable DAC Channel1 */
@@ -92,8 +90,8 @@ void DAC_INT_init(void)
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
 	/* Enable the TIM3 gloabal Interrupt */
 	NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x02; //This interrupt has lower priority than the keys interrupt.
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x02;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 

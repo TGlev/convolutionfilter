@@ -25,10 +25,11 @@ G_KEY is a global variable which holds the last pressed button
 */
 
 #include "main.h"
+#include "wsinc.h"
 #if KEYS_INT
 
 /****************Globals********************************/
-int G_KEY;				// Global variable. G_KEY is filled with the pressed key
+//int G_KEY;				// Global variable. G_KEY is filled with the pressed key
 
 void KEYS_INT_init(void)
 /* Keys interrupt initialize
@@ -38,7 +39,7 @@ void KEYS_INT_init(void)
  * This pin is connected to External Interrupt 0.
  */
 {
-	G_KEY = 0;											// Start with a clean key
+	//G_KEY = 0;											// Start with a clean key
 	EXTI_InitTypeDef   EXTI_InitStructure;				// External interrupt init structure
 	GPIO_InitTypeDef gpio;								// GPIO init structure
 
@@ -81,10 +82,10 @@ void KEYS_INT_init(void)
 	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
 	EXTI_Init(&EXTI_InitStructure);
 
-	/* Enable and set EXTI Line0 Interrupt to the lowest priority */
+	/* Enable and set EXTI Line0 Interrupt to the highest priority */
 	NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x02;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x02;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x01;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x01;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 }
@@ -98,18 +99,17 @@ void EXTI0_IRQHandler(void)
 {
 	if(EXTI_GetITStatus(EXTI_Line0) != RESET)
 	{
-		GPIO_ResetBits(GPIOD, KEY_ROW);	// Reset all rows so KEYS_read can start reading
-		G_KEY = KEYS_read();			// Read the pressed key
+		__disable_irq(); //Disable interrupts so this code can run in peace.
 
-		// Put your code here.. Or not, and use the global
-		LCD_XY(0,1);		// Example
-		LCD_put("KEY:  ");
-		LCD_XY(4,1);
-		LCD_putint(G_KEY);
+		GPIO_ResetBits(GPIOD, KEY_ROW);	// Reset all rows so KEYS_read can start reading
+
+		reconfigure_kernel(KEYS_read()); //Reconfigure the kernel with the new key received.
 
 		GPIO_SetBits(GPIOD, KEY_ROW);	// Make the ROW high, so we can wait for an interrupt
 
 		EXTI_ClearITPendingBit(EXTI_Line0);	// Clear the interrupt bit
+
+		__enable_irq(); //Enable interrupts again so the system functions again.
 	}
 }
 

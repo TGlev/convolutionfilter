@@ -48,7 +48,7 @@ int buffer_read(int offset)
 	//The offset is kept in mind to get samples before or after the index
 	int readPosition = bufferPosition - offset - 1;
 
-	//Make sure the position doesnt get below 0
+	//Make sure the position doesn't get below 0
 	if(readPosition < 0)
 		readPosition = readPosition + BUFFERSIZE;
 

@@ -22,13 +22,9 @@ void printinfo() //Function that writes some info to the UART.
 					"	Luca Panjer en Ian Baak, EV3A\r\n"
 					"	Vak: STP, Docent: Franc van der Bent & Hubert Schuit\r\n\r\n"
 					"	CLK speed: %d Mhz\r\n\r\n";
-	char *version = "Convolutie"; // Showed on LCD at startup
+	//char *version = "Convolutie"; // Showed on LCD at startup
 
 	UART_printf(256, functionality, G_CLK / 1000000);
-
-	LCD_clear(); // Start with a clear display
-	LCD_XY(0, 0); // Shift one spot
-	LCD_put(version); // Put the version
 }
 
 void initboard() //Function that contains all initialize functions of the board I/O.
@@ -41,15 +37,18 @@ void initboard() //Function that contains all initialize functions of the board 
 
 	SystemInit(); // Set SystemCLK
 	set++; // if this value is > 1 you have made a serious pointer error, reset happened
-	DELAY_init(); // Initialise Delay functions
+	DELAY_init(); // Initialize Delay functions
 
-	UART_init(); // Initialise UART3 Without interrupt.
+	UART_init(); // Initialize UART3 Without interrupt.
 
-	UART_INT_init(); // Initialise UART3 With interrupt enabled (Also use UART_init())
+	LCD_init(); // Initialize LCD-display
 
-	LCD_init(); // Initialise LCD-display
+	//Generate default kernel for use by the convolution:
+	gen_kernel(DEFAULTFREQ, BUFFERSIZE - 1);
 
-	buffer_init();
+	KEYS_INT_init(); //Initialize interrupts for the keys, so that these can be used to reconfigure the sinc function.
+
+	buffer_init(); //Initialize circular buffer.
 
 	DAC_init(Channel_1); // init channel 1 of DA converter full precision
 	DAC_init(Channel_2); // init channel 2 of DA converter full precision
@@ -64,9 +63,6 @@ int main(void)
 	initboard(); //Initialize I/O.
 	printinfo();
 
-	//Generate kernel for use by the convolution:
-	gen_kernel(5000, BUFFERSIZE - 1);
-
 	while (1)
-		; // AD/DA will run under interrupt
+		; //ADC and DAC will run under interrupt.
 }

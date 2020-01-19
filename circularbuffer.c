@@ -7,7 +7,6 @@
 #include "circularbuffer.h"
 #include "main.h"
 
-
 //The main array where the values of the buffer are stored
 int buffer[BUFFERSIZE];
 
@@ -23,11 +22,44 @@ void buffer_init()
 	for(int i = 0; i < BUFFERSIZE; i++)
 		buffer[i] = 0;
 
-	//Set the indexes to zero
+	//Set the index to zero
 	bufferPosition = 0;
 }
 
-void buffer_write(int data)
+/*
+ * The buffer is made significantly faster by "calculating overflows out" instead of comparing two numbers and then changing the index accordingly.
+ * This works by doing a bitwise AND with the saved index and a mask that is the size of the buffer - 1.
+ * This calculation results in the address of where to store our sample.
+ * The disadvantage to doing this is that the circular buffer always has to be an even number in size.
+ * To understand this, let's imagine a buffer with a size of 4. We will start sampling and placing the samples in the buffer one by one.
+ * To make the concept clear, we will show each bitwise AND.
+ * Our index starts at 0 and our mask is 3 (011).
+ * For sample 0, the calculation will be: 000 & 011 = 000
+ * For sample 1, the calculation will be: 001 & 011 = 001
+ * For sample 2, the calculation will be: 010 & 011 = 010
+ * For sample 3, the calculation will be: 011 & 011 = 011
+ * For these first four samples, the bitwise AND doesn't seem to have any effect at all.
+ * Now, watch the magic happen as we try to put a sample into position 4
+ * For sample 4, the calculation will be 100 & 011 = 000
+ * The 4th sample will be placed in position 0 again! This principle will also work if you have a way larger number, let's say 127(1111111)
+ * Sample 128; 1111111 & 011 = 011
+ */
+
+void buffer_write(int value)
+{
+    buffer[(++bufferPosition) & BUFFERMASK] = value;
+}
+
+int buffer_read(unsigned offset)
+{
+    return buffer[(bufferPosition - offset) & BUFFERMASK];
+}
+
+/*
+ * OLD & SLOW BUFFER CODE
+ */
+
+/*void buffer_write(int data)
 {
 
 	//Put the data at the right position in the buffer
@@ -54,5 +86,5 @@ int buffer_read(int offset)
 
 	//Return the value from the buffer
 	return buffer[readPosition];
-}
+}*/
 

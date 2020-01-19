@@ -74,10 +74,10 @@ void reconfigure_kernel(int key)
 	//Write new cut off frequency based on the key:
 	kantelfreq = freq_change(key, kantelfreq);
 
-	gen_kernel(kantelfreq, BUFFERSIZE); //Generate new filter kernel
+	gen_kernel(kantelfreq, TAPS); //Generate new filter kernel
 
 	//Print kernel for testing purposes:
-	for (int i = 0; i < BUFFERSIZE; i++)
+	for (int i = 0; i < TAPS; i++)
 		UART_printf(20, "%d, ", wSincKernel[i]);
 }
 

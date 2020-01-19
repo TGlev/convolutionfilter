@@ -12,6 +12,10 @@
 //Function that generates a windowed sinc in integers (division by 10E6 needed):
 void gen_kernel(int cut_freq, int kernel_size)
 {
+	//Reduce the size of the kernel by 1 to make sure it an even number again
+	//We can assume the kernel size is an odd number because the array of taps need to be an odd number
+	kernel_size--;
+
 	int i; //Iterator for loops.
 	float deelsom = 0.0; //Required for normalization.
 	float fc; //Contains the cut off frequency as a fraction.
@@ -70,7 +74,7 @@ void reconfigure_kernel(int key)
 	//Write new cut off frequency based on the key:
 	kantelfreq = freq_change(key, kantelfreq);
 
-	gen_kernel(kantelfreq, BUFFERSIZE - 1); //Generate new filter kernel
+	gen_kernel(kantelfreq, BUFFERSIZE); //Generate new filter kernel
 
 	//Print kernel for testing purposes:
 	for (int i = 0; i < BUFFERSIZE; i++)

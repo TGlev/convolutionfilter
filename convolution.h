@@ -4,6 +4,8 @@
 //
 ///////////////////////////////////////////////////////////////////////
 
+#define TAPS 101
+
 //Prototypes:
 int convolve();
 void loadarrays(int* in, int* impuls, int in_size, int impuls_size);

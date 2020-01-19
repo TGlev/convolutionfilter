@@ -44,7 +44,7 @@ void initboard() //Function that contains all initialize functions of the board 
 	LCD_init(); // Initialize LCD-display
 
 	//Generate default kernel for use by the convolution:
-	gen_kernel(DEFAULTFREQ, BUFFERSIZE - 1);
+	gen_kernel(DEFAULTFREQ, TAPS);
 
 	KEYS_INT_init(); //Initialize interrupts for the keys, so that these can be used to reconfigure the sinc function.
 

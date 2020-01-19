@@ -110,4 +110,4 @@
 #define DEFAULTFREQ 5000
 
 //Global array for the filter kernel.
-int wSincKernel[BUFFERSIZE];
+int wSincKernel[TAPS];

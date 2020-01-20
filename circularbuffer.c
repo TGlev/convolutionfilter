@@ -12,6 +12,7 @@ int buffer[BUFFERSIZE];
 
 //The two variables that keep track of where to read and where to write inside of the circular buffer
 int bufferPosition = 0;
+
 /*
  * Import function to initialize the buffer.
  * It basically loops trough all of the elements in the buffer array and zeros them
@@ -58,8 +59,8 @@ int buffer_read(unsigned offset)
 /*
  * OLD & SLOW BUFFER CODE
  */
-
-/*void buffer_write(int data)
+/*
+void buffer_write(int data)
 {
 
 	//Put the data at the right position in the buffer
@@ -74,7 +75,7 @@ int buffer_read(unsigned offset)
 		//bufferPosition = 0;
 }
 
-int buffer_read(int offset)
+int buffer_read(unsigned offset)
 {
 	//The -1 is necessary to get the newest sample, the newest sample is always the one right before the index
 	//The offset is kept in mind to get samples before or after the index
@@ -86,5 +87,5 @@ int buffer_read(int offset)
 
 	//Return the value from the buffer
 	return buffer[readPosition];
-}*/
-
+}
+*/

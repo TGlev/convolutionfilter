@@ -22,7 +22,6 @@ void printinfo() //Function that writes some info to the UART.
 					"	Luca Panjer en Ian Baak, EV3A\r\n"
 					"	Vak: STP, Docent: Franc van der Bent & Hubert Schuit\r\n\r\n"
 					"	CLK speed: %d Mhz\r\n\r\n";
-	//char *version = "Convolutie"; // Showed on LCD at startup
 
 	UART_printf(256, functionality, G_CLK / 1000000);
 }

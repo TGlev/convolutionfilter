@@ -9,7 +9,7 @@
 #include "wsinc.h"
 #include <math.h>
 
-//Function that generates a windowed sinc in integers (division by 10E6 needed):
+//Function that generates a windowed sinc in integers (division by 10E3 needed):
 void gen_kernel(int cut_freq, int kernel_size)
 {
 	//Reduce the size of the kernel by 1 to make sure it an even number again

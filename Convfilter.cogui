@@ -18,51 +18,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="circularbuffer.c" partName="circularbuffer.c" path="C:/stm32/git/convolutionfilter/circularbuffer.c" title="circularbuffer.c" tooltip="C:/stm32/git/convolutionfilter/circularbuffer.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Sources/circularbuffer.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2752" selectionTopPixel="666"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="circularbuffer.h" partName="circularbuffer.h" path="C:/stm32/git/convolutionfilter/circularbuffer.h" title="circularbuffer.h" tooltip="C:/stm32/git/convolutionfilter/circularbuffer.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Includes/circularbuffer.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="506" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="convolution.h" partName="convolution.h" path="C:/stm32/git/convolutionfilter/convolution.h" title="convolution.h" tooltip="C:/stm32/git/convolutionfilter/convolution.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Includes/convolution.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="224" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="convolution.c" partName="convolution.c" path="C:/stm32/git/convolutionfilter/convolution.c" title="convolution.c" tooltip="C:/stm32/git/convolutionfilter/convolution.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Sources/convolution.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="444" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/stm32/git/convolutionfilter/main.c" title="main.c" tooltip="C:/stm32/git/convolutionfilter/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Sources/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1342" selectionTopPixel="670"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" partName="main.h" path="C:/stm32/git/convolutionfilter/main.h" title="main.h" tooltip="C:/stm32/git/convolutionfilter/main.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Includes/main.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1612" selectionTopPixel="1570"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="wsinc.c" partName="wsinc.c" path="C:/stm32/git/convolutionfilter/wsinc.c" title="wsinc.c" tooltip="C:/stm32/git/convolutionfilter/wsinc.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Sources/wsinc.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2697" selectionTopPixel="1282"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="wsinc.h" partName="wsinc.h" path="C:/stm32/git/convolutionfilter/wsinc.h" title="wsinc.h" tooltip="C:/stm32/git/convolutionfilter/wsinc.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Convfilter/Includes/wsinc.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="107" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
@@ -74,14 +33,12 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/Convfilter"/>
-<element path="/Convfilter/cmsis"/>
-<element path="/Convfilter/cmsis_lib"/>
 <element path="/Convfilter/Includes"/>
 <element path="/Convfilter/Sources"/>
 <element path="/Convfilter/stdio"/>
 </expanded>
 <selection>
-<element path="/Convfilter"/>
+<element path="/Convfilter/Sources/dac.c"/>
 </selection>
 </viewState>
 </view>
@@ -90,8 +47,8 @@
 </view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
-<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 </viewState>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
@@ -110,7 +67,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -290,184 +247,30 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/convolution.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/wsinc.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Includes/circularbuffer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/circularbuffer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/dac.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Includes/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/keys_int.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/circularbuffer.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Includes/circularbuffer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Includes/circularbuffer.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Includes/convolution.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/convolution.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/keys_int.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Includes/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Sources/wsinc.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Convfilter/Includes/wsinc.h"/>
-</editors>
-<item historyLabel="circularbuffer.h" index="2">
-<position info="not_deleted" x="289" y="0"/>
-</item>
-<item historyLabel="circularbuffer.c" index="3">
-<position info="not_deleted" x="776" y="0"/>
-</item>
-<item historyLabel="dac.c" index="4">
-<position info="not_deleted" x="3874" y="0"/>
-</item>
-<item historyLabel="convolution.c" index="0">
-<position info="not_deleted" x="387" y="0"/>
-</item>
-<item historyLabel="wsinc.c" index="1">
-<position info="not_deleted" x="627" y="1"/>
-</item>
-<item historyLabel="main.c" index="5">
-<position info="not_deleted" x="1853" y="0"/>
-</item>
-<item historyLabel="main.h" index="6">
-<position info="not_deleted" x="1656" y="0"/>
-</item>
-<item historyLabel="convolution.c" index="0">
-<position info="not_deleted" x="387" y="0"/>
-</item>
-<item historyLabel="main.h" index="6">
-<position info="not_deleted" x="1656" y="0"/>
-</item>
-<item historyLabel="keys_int.c" index="7">
-<position info="not_deleted" x="3276" y="0"/>
-</item>
-<item historyLabel="circularbuffer.c" index="8">
-<position info="not_deleted" x="774" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="9">
-<position info="not_deleted" x="487" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="9">
-<position info="not_deleted" x="540" y="0"/>
-</item>
-<item historyLabel="circularbuffer.c" index="8">
-<position info="not_deleted" x="2202" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="9">
-<position info="not_deleted" x="540" y="0"/>
-</item>
-<item historyLabel="circularbuffer.c" index="8">
-<position info="not_deleted" x="2234" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="9">
-<position info="not_deleted" x="540" y="0"/>
-</item>
-<item historyLabel="circularbuffer.c" index="8">
-<position info="not_deleted" x="2387" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="9">
-<position info="not_deleted" x="540" y="0"/>
-</item>
-<item historyLabel="circularbuffer.c" index="8">
-<position info="not_deleted" x="2387" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="9">
-<position info="not_deleted" x="561" y="0"/>
-</item>
-<item historyLabel="circularbuffer.c" index="8">
-<position info="not_deleted" x="2387" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="10">
-<position info="not_deleted" x="506" y="0"/>
-</item>
-<item historyLabel="convolution.h" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="convolution.c" index="12">
-<position info="not_deleted" x="810" y="0"/>
-</item>
-<item historyLabel="convolution.h" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="convolution.c" index="12">
-<position info="not_deleted" x="471" y="0"/>
-</item>
-<item historyLabel="main.c" index="13">
-<position info="not_deleted" x="1879" y="0"/>
-</item>
-<item historyLabel="keys_int.c" index="14">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.c" index="13">
-<position info="not_deleted" x="1311" y="0"/>
-</item>
-<item historyLabel="circularbuffer.h" index="10">
-<position info="not_deleted" x="506" y="0"/>
-</item>
-<item historyLabel="convolution.c" index="12">
-<position info="not_deleted" x="444" y="0"/>
-</item>
-<item historyLabel="convolution.h" index="11">
-<position/>
-</item>
-<item historyLabel="convolution.c" index="12">
-<position info="not_deleted" x="444" y="0"/>
-</item>
-<item historyLabel="main.h" index="15">
-<position info="not_deleted" x="1612" y="0"/>
-</item>
-<item historyLabel="wsinc.c" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wsinc.h" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wsinc.c" index="16">
-<position info="not_deleted" x="667" y="0"/>
-</item>
-<item historyLabel="main.c" index="13">
-<position info="not_deleted" x="1342" y="0"/>
-</item>
-<item historyLabel="main.h" index="15">
-<position info="not_deleted" x="1612" y="0"/>
-</item>
-<item historyLabel="wsinc.c" index="16">
-<position info="not_deleted" x="2670" y="0"/>
-</item>
-<item historyLabel="main.c" index="13">
-<position info="not_deleted" x="1342" y="0"/>
-</item>
-<item historyLabel="wsinc.c" index="16">
-<position info="not_deleted" x="2670" y="0"/>
-</item>
-<item historyLabel="convolution.c" index="12">
-<position info="not_deleted" x="444" y="0"/>
-</item>
-<item historyLabel="wsinc.c" index="16">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-<item historyLabel="wsinc.h" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wsinc.c" index="16">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-<item historyLabel="wsinc.h" index="17">
-<position info="not_deleted" x="107" y="0"/>
-</item>
-<item active="true" historyLabel="wsinc.c" index="16">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dac.c" tooltip="Convfilter/Sources/dac.c">
+<persistable path="/Convfilter/Sources/dac.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="arm_math.h" tooltip="Convfilter/cmsis/arm_math.h">
+<persistable path="/Convfilter/cmsis/arm_math.h"/>
+</file>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<persistable>
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="keys_int.c" tooltip="Convfilter/Sources/keys_int.c">
+<persistable path="/Convfilter/Sources/keys_int.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="keys_int.h" tooltip="Convfilter/Includes/keys_int.h">
+<persistable path="/Convfilter/Includes/keys_int.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="wsinc.h" tooltip="Convfilter/Includes/wsinc.h">
 <persistable path="/Convfilter/Includes/wsinc.h"/>
 </file>
@@ -476,9 +279,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="Convfilter/Includes/main.h">
 <persistable path="/Convfilter/Includes/main.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="keys_int.c" tooltip="Convfilter/Sources/keys_int.c">
-<persistable path="/Convfilter/Sources/keys_int.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Convfilter/Sources/main.c">
 <persistable path="/Convfilter/Sources/main.c"/>
@@ -500,18 +300,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd.h" tooltip="Convfilter/Includes/lcd.h">
 <persistable path="/Convfilter/Includes/lcd.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="adc.c" tooltip="Convfilter/Sources/adc.c">
-<persistable path="/Convfilter/Sources/adc.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dac.c" tooltip="Convfilter/Sources/dac.c">
-<persistable path="/Convfilter/Sources/dac.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="Convfilter/cmsis_boot/startup/startup_stm32f4xx.c">
-<persistable path="/Convfilter/cmsis_boot/startup/startup_stm32f4xx.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.c" tooltip="Convfilter/cmsis_lib/source/stm32f4xx_rcc.c">
-<persistable path="/Convfilter/cmsis_lib/source/stm32f4xx_rcc.c"/>
 </file>
 </mruList>
 </workbench>

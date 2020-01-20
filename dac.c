@@ -99,7 +99,7 @@ void DAC_INT_init(void)
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
 	/* Time base configuration */
 
-	TIM_TimeBaseStructure.TIM_Period = 25; //Parameters om te samplen op 40 kHz
+	TIM_TimeBaseStructure.TIM_Period = 24; //Parameters om te samplen op 40 kHz
 	TIM_TimeBaseStructure.TIM_Prescaler = 84;
 
 	TIM_TimeBaseStructure.TIM_ClockDivision = 0;
@@ -122,21 +122,11 @@ void TIM3_IRQHandler(void)
 	{
 		TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
 
-		// With interrupt enabled, this will be done to the DAC channels
-		//if (Data1++>512) Data1=0;
-		//DAC_SetChannel1Data(DAC_Align_12b_R, Data1);
-		//DAC_SetChannel2Data(DAC_Align_12b_R, Data1);
-
-		// example read ADC value and store in DAC
-		//DAC_SetChannel1Data(DAC_Align_12b_R, Get_ADC_Value(Channel_1));
-
 		//Write the sample into the buffer
 		buffer_write(Get_ADC_Value(Channel_2));
 
 		//Convolve the circular buffer with the impulse response.
 		DAC_SetChannel2Data(DAC_Align_12b_R, convolve());
-
-		//DAC_SetChannel2Data(DAC_Align_12b_R, Get_ADC_Value(Channel_2));  // also called a very expensive wire!
 	}
 }
 #endif

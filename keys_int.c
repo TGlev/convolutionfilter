@@ -1,5 +1,5 @@
 /*
-Author: 	W Pielage & E Helmond & J.F. van der Bent
+Author: 	W Pielage & E Helmond & J.F. van der Bent & Ian Baak
 Date:		13-9-2015
 Revision:	5
 
